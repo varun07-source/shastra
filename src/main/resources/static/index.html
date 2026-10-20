@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shastra — Student AI</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="layout">
+  <aside>
+    <div class="brand">✦ Shastra</div>
+    <p class="muted">Your student companion</p>
+    <button id="newChat" class="secondary">＋ New chat</button>
+    <button id="newBranch" class="secondary">↳ New branch chat</button>
+    <a class="side-link" href="#coding">⌘ Coding practice</a>
+    <a class="side-link" href="#feedback">✎ Feedback</a>
+    <p class="tiny">Chats in this demo stay in this browser tab.</p>
+  </aside>
+  <main>
+    <header><div><span class="eyebrow">STUDENT AI ASSISTANT</span><h1>What can I help you with?</h1></div><span class="status">● Demo ready</span></header>
+    <div class="chips"><button>Explain a Java concept</button><button>Study plan</button><button>Healthy eating basics</button></div>
+    <section id="messages" class="messages"><div class="bubble bot">Hi! I'm Shastra. Ask me about studying, coding, everyday topics, or general health information.</div></section>
+    <form id="chatForm" class="composer"><textarea id="message" rows="2" placeholder="Ask Shastra anything..." required></textarea><button type="submit">Send ↑</button></form>
+    <p class="tiny safety">Health answers are general information, not a diagnosis or a substitute for a qualified professional.</p>
+    <section id="coding" class="panel"><h2>⌘ Coding practice</h2><p>Try one: “Explain Java inheritance with an example” or “Give me a beginner array problem.”</p><button id="codingPrompt">Try a Java practice prompt</button></section>
+    <section id="feedback" class="panel"><h2>✎ Help improve Shastra</h2><p>Tell us what was unclear or missing in an answer.</p>
+      <form id="feedbackForm"><select id="rating"><option>Helpful</option><option>Partly helpful</option><option>Not helpful</option><option>Didn't understand</option></select><textarea id="comment" rows="2" placeholder="What should be improved?"></textarea><button type="submit">Send feedback</button></form><p id="feedbackStatus" class="tiny"></p>
+    </section>
+  </main>
+</div>
+<script src="/app.js"></script>
+</body></html>

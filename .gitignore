@@ -1,0 +1,17 @@
+target/
+.env
+.idea/
+.vscode/
+*.iml
+.DS_Store
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+src/main/resources/application.properties
+src/main/resources/application.properties.backup
+
+# Build output and OS files
+target/
+.DS_Store
